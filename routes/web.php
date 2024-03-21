@@ -23,4 +23,7 @@ Route::get('/form', function () {
     return view('forms');
 });
 
+Route::post('/form', [MembersController::class, 'store']);
+
+
 Route::get('/members', [MembersController::class, 'index']);

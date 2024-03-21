@@ -1,0 +1,91 @@
+/* Apply background imgage for body  */
+.formbody {
+	background-image: url('../img/hero.png');
+}
+
+.selectdropcss {
+	right: 10px; top: 50%; transform: translateY(-50%);
+}
+
+.selectdropLoccss {
+	right: 20px; top: 60%; transform: translateY(-50%);
+}
+
+
+/* Apply border radius to form controls */
+.input-style {
+    border-radius: 0.5rem !important; /* Adjust border radius as needed */
+    padding-left: 35px;  /*Adjust padding to make space for the icon */
+    background: url('../img/Vector.png') no-repeat left center; /* Replace 'icon.png' with your icon image path */
+    background-size: 15px; /* Adjust the size of the icon */
+    background-color: white;
+    background-position: 8px;
+}
+
+/* Apply border radius to form controls */
+.input-style-calender {
+   border-radius: 0.4rem;  padding-left: 35px; background: url('../img/Exclude.png') no-repeat left center; background-size: 15px; background-color: white; background-position: 8px;
+}
+
+/* Apply border radius to form controls */
+.input-style-mobile {
+   border-radius: 0.4rem;  padding-left: 35px; background: url('../img/Union.png') no-repeat left center; background-size: 15px; background-color: white; background-position: 8px;
+}
+
+/* Apply border radius to form controls */
+.input-style-email {
+   border-radius: 0.4rem;  padding-left: 35px; background: url('../img/Subtract.png') no-repeat left center; background-size: 15px; background-color: white; background-position: 8px;
+}
+
+/* Apply border radius to form controls */
+.input-style-location {
+   border-radius: 0.4rem;  padding-left: 35px; background: url('../img/Location.png') no-repeat left center; background-size: 20px; background-color: white; background-position: 8px;
+}
+
+/* Change placeholder color */
+.form-control::placeholder {
+    color: #999; /* Change placeholder color to gray */
+}
+
+
+.wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .file-upload {
+    height: 200px;
+    width: 200px;
+    border-radius: 100px;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 4px solid #FFFFFF;
+    overflow: hidden;
+    /*background-image: url('{{ asset('dist/img/upload-icon.png') }}');*/
+    background-image: url('https://i.pravatar.cc/500?img=7');
+    background-size: 100% 100%;
+    transition: all 1s;
+    color: #FFFFFF;
+    font-size: 100px;
+  }
+
+  .file-upload input[type='file'] {
+    height: 200px;
+    width: 200px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    cursor: pointer;
+  }
+
+/*  .file-upload:hover {
+    background-position: 0 -100%;
+    color: #2590EB;
+  }
+*/

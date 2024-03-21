@@ -56,5 +56,28 @@
 
   @yield('scripts')
   @stack('scripts')
+
+  <script type="text/javascript">
+    $(document).ready(function () {
+        @if (Session::has('error'))
+        notification("error", "{!! Session::get('error') !!}");
+        @endif
+
+        @if ($errors->any())
+        notification("error", $("#error_list").html());
+        @endif
+
+        @if (Session::has('success'))
+        notification("success", "{!! Session::get('success') !!}");
+        @endif
+
+        customFormValidation('form');
+        $.extend(true, $.fn.dataTable.defaults, {
+            stateSave: true,
+            // responsive: true,
+        });
+        $('.table').parent().addClass("table-responsive");
+    });
+</script>
 </body>
 </html>

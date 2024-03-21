@@ -19,6 +19,7 @@
 <script src="{{ asset('dist/js/adminlte.min.js') }}"></script>
 <!-- AdminLTE for demo purposes -->
 <script src="{{ asset('dist/js/demo.js') }}"></script>
+<script src="{{ asset('dist/js/custom.js') }}"></script>
 <!-- Page specific script -->
 
 <script type="text/javascript">
